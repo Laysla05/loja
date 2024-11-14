@@ -1,0 +1,261 @@
+<!-- script que verifica a versão da linguagem HTML -->
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<!-- define bilioteca gráfica de caracteres -->
+		<meta charset="utf-8">
+
+		<!-- informa a largura da tela ao css responsivo-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!--define compatibilidade entre os navegadores da Microsoft-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!--define indexação junto aos buscadores-->
+		<meta name="robots" content="index,follow">
+
+		<!--define a descrição por frases do próposito do site-->
+		<meta name="description" content="">
+
+		<!-- define a descrição por palavras (simples ou compostas) do próposito do site-->
+		<meta name="keywords" content="">
+
+		<!-- Apresenta o Denvolvedor, Empresa ou Equipe de Desenvolvedores-->
+		<meta name="author" content="Laysla Silva">
+
+		<title> Detalhe do Produto - LCDM </title>
+		
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+		<!--Link da fonte-->
+		<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Poppins'>
+		<!--tipo de fonte-->
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;900&display=swap" rel="stylesheet">
+
+	</head>
+	<body>		
+		 
+			<div class="container">
+				<div class="navbar">
+					<div class="logo">
+						<a href="index.html"><img src="imagens/lacademia.png" width="200px"></a>
+					</div>
+					<nav>
+				  <ul id="MenuItens">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="produtos.html">Produtos</a></li>
+					<li><a href="#servicos">Serviços</a></li>
+					<li><a href="#contatos">Contatos</a></li>
+					<li><a href="login.html"><i class="fas fa-user"></i></a></li>
+					<li><a href="carrinho.html"><i class="fas fa-cart-plus"></i></a></li>
+					<li><a href="#" onclick="menutoggle()"><i class="fas fa-bars"></i></a></li>				
+				 </ul>
+					</nav>
+
+				</div>
+		    </div>
+  	<!-- Detalhes do produto único -->
+<div class="small-container single-producto">
+	<div class="row">
+		<div class="col-4">
+		 <img src="imagens/destaqueprncipal.jpg" id="ProductoImg">
+	  <!-- Imagens menores -->
+	  <div class="small-img-row">
+			<div class="small-img-col">
+		 	 <img src="imagens/destaque1.jpg" class="small-img">
+			</div>
+			<div class="small-img-col">
+		 	 <img src="imagens/destaque2.jpg" class="small-img">
+			</div>
+			<div class="small-img-col">
+		  	 <img src="imagens/destaque3.jpg" class="small-img">
+			</div>
+			<div class="small-img-col">
+		  	 <img src="imagens/destaque4.jpg" class="small-img">
+			</div>
+	  </div>
+		</div>
+	
+		<div class="col-2">
+	  
+	  <p>Home-Tenês</p>
+	  <h1>Tenês da Nike Preto c/ Vermelho</h1>
+	  <h4>$250.00</h4>
+	  
+	 
+	  <select>
+		<option>Tamanho</option>
+		<option>35</option>
+		<option>36</option>
+		<option>37</option>
+		<option>38</option>
+		<option>39</option>
+	  </select>
+	
+	  <input type="number" value="1" />
+	  <a href="" class="btn">Add ao Carrinho</a>
+	  <h3>Detalhes do Produto <i class="fa fa-indent"></i></h3>
+	  <br />
+	  <p>Transforme seu treino com estilo e conforto! Está na hora de elevar seu desempenho com o este novo tenês da nike. 
+		Feito com materiais de alta qualidade, ele não só oferece liberdade de movimento, mas também garante o 
+		conforto que você precisa para cada exercício.</p>
+	</div>
+	
+	</div>
+	</div>
+	
+						<!-----titulo------>
+		<div class="small-container">
+			<div class="row row-2">
+				<h2>Produtos Relacionados</h2>
+				<p>Ver Mais</p>
+			</div>
+		</div>
+
+                   <!----Produtos----->
+	   <div class="small-container">
+			<div class="row">
+				<div class="col-4">
+				  <img src="imagens/produto3.jpg" alt="conjunto vermelho">
+				  <h4>Garrafa rosa</h4>
+				  
+					<div class="rating">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-half-o"></i>
+					</div>
+					R$ 120,00 <br><i class="fas fa-shopping-cart"></i> 
+			 	</div>
+				<div class="col-4">
+					<img src="imagens/produto2.jpg" alt="Conjunto Laranja">
+					<h4>Shorts Preto</h4>
+					
+					  <div class="rating">
+							  <i class="fa fa-star"></i>
+							  <i class="fa fa-star"></i>
+							  <i class="fa fa-star"></i>
+							  <i class="fa fa-star"></i>
+							  <i class="fa fa-star"></i>
+							  <i class="fa fa-star-half-o"></i>
+							  
+							</div>
+					  R$ 80,00 <br><i class="fas fa-shopping-cart"></i> 
+				   </div>
+				   <div class="col-4">
+					<img src="imagens/produto12.jpg" alt="conjunto roxo">
+					<h4>Bolsa Preta</h4>
+					
+					  	<div class="rating">
+							  <i class="fa fa-star"></i>
+							  <i class="fa fa-star"></i>
+							  <i class="fa fa-star"></i>
+							  <i class="fa fa-star"></i>
+							  <i class="fa fa-star"></i>
+							  <i class="fa fa-star-half-o"></i>
+							  
+					  	</div>
+					  R$ 80,00 <br><i class="fas fa-shopping-cart"></i> 
+				   </div>
+				   <div class="col-4">
+						<img src="imagens/produto5.jpg" alt="conjunto rosa">
+						<h4>Shorts-legging Preta</h4>
+					
+					  <div class="rating">
+							  <i class="fa fa-star"></i>
+							  <i class="fa fa-star"></i>
+							  <i class="fa fa-star"></i>
+							  <i class="fa fa-star"></i>
+							  <i class="fa fa-star"></i>
+							  <i class="fa fa-star-o"></i>
+					  </div>
+					  R$ 50,00 <br><i class="fas fa-shopping-cart"></i> 
+				   </div>
+				</div>
+		    </div>
+				<!----------rodape-------->
+				<div class="rodape">
+					<div class="container">
+							<div class="row">
+								<div class="rodape-col-1">
+									<h3>Baixe o nosso aplicativo</h3>
+									<p>Faça o download do nosso aplicativo para Android e iOS e tenha tudo na palma da sua mão.</p>
+								<div class="app-logo">
+									<img src="imagens/Imagem_do_WhatsApp_de_2024-10-22_à_s__16.47.51_a25d27c5-removebg-preview.png"> <!--logo google play-->																	
+								</div>
+								</div>
+								<div class="rodape-col-2">
+									<img src="imagens/logo lacademia inverso.jpg"> <!--logo do rodape-->
+									<p>Nosso objetivo é tornar os benefícios e experiências mais acessíveis para todos!</p>
+								</div>
+								<div class="rodape-col-3">
+									<h3>Links</h3>
+									<ul>
+										<li>Cupons</li>
+										<li>Postagens no blog</li>
+										<li>Politicas de devolução</li>
+										<li>Una-se aos afiliados</li>
+										</ul>
+								</div>
+								<div class="rodape-col-4">
+									<h3>Redes Sociais</h3>
+										<ul>
+											<li>Facebook</li>
+											<li>Twitter</li>
+											<li>Instagram</li>
+											<li>YouTube</li>
+										</ul>
+								</div>
+							</div>
+								<hr>
+								<P class="site">Primeiro site 2024-Laysla Silva</P>
+					</div>
+				</div>
+						
+	  <!---js para alternar menu-->
+
+		<script>
+		var MenuItens = document.getElementById("MenuItens");
+
+		MenuItens.style.maxHeight = "0px";
+
+		function menutoggle(){
+			if(MenuItens.style.maxHeight == "0px")
+			{
+				 MenuItens.style.maxHeight ="200px"
+			}
+			else
+			{
+				 MenuItens.style.maxHeight ="0px"
+			}
+		}
+    
+		</script>
+
+				<!-----detalhes do produtos---->
+				<script>
+					var ProductoImg = document.getElementById("ProductoImg");
+					var SmallImg = document.getElementsByClassName("small-img");
+					
+					SmallImg[0].onclick = function() {
+					  ProductoImg.src = SmallImg[0].src;
+					}
+					SmallImg[1].onclick = function() {
+					  ProductoImg.src = SmallImg[1].src;
+					}
+					SmallImg[2].onclick = function() {
+					  ProductoImg.src = SmallImg[2].src;
+					}
+					SmallImg[3].onclick = function() {
+					  ProductoImg.src = SmallImg[3].src;
+					}
+					</script>
+					
+
+	
+	</body>
+</html>

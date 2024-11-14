@@ -1,0 +1,178 @@
+<!-- script que verifica a versão da linguagem HTML -->
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<!-- define bilioteca gráfica de caracteres -->
+		<meta charset="utf-8">
+
+		<!-- informa a largura da tela ao css responsivo-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!--define compatibilidade entre os navegadores da Microsoft-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!--define indexação junto aos buscadores-->
+		<meta name="robots" content="index,follow">
+
+		<!--define a descrição por frases do próposito do site-->
+		<meta name="description" content="">
+
+		<!-- define a descrição por palavras (simples ou compostas) do próposito do site-->
+		<meta name="keywords" content="">
+
+		<!-- Apresenta o Denvolvedor, Empresa ou Equipe de Desenvolvedores-->
+		<meta name="author" content="Laysla Silva">
+
+		<title>LCDM/Login</title>
+		
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+		<!--Link da fonte-->
+		<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Poppins'>
+		<!--tipo de fonte-->
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;900&display=swap" rel="stylesheet">
+
+	</head>
+<body>
+	
+		
+		<div class="header">
+			<div class="container">
+				<div class="navbar">
+					<div class="logo">
+						<a href="index.html"><img src="imagens/lacademia.png" width="200px"></a>
+					</div>
+					<nav>
+						<ul id="MenuItens">
+							<li><a href="index.html">Inicio</a></li>
+							<li><a href="produtos.html">Produtos</a></li>
+							<li><a href="#servicos">Serviços</a></li>
+							<li><a href="#contatos">Contatos</a></li>
+							<li><a href="login.html"><i class="fas fa-user"></i></a></li>
+							<li><a href="carrinho.html"><i class="fas fa-cart-plus"></i></a></li>
+							<li><a href="#" onclick="menutoggle()"><i class="fas fa-bars"></i></a></li>				
+						</ul>
+					</nav>
+
+				</div>
+            </div>
+        </div>
+			<!---Pagina da conta-->
+
+	<div class="account-page">
+		<div class="container">
+			<div class="row">
+				<div class="col-2">
+					<img src="imagens/duquetop.png">
+				</div>
+				<div class="col-2">
+					<div class="form-container">
+						<div class="form-btn">
+							<span onclick="login()">Entrar</span>
+							<span onclick="register()">Cadastra</span>
+							<hr id="Indicator">
+						</div>
+						<form  id="LoginForm">
+							<input type="text" placeholder="Nome">
+							<input type="password" placeholder="Senha">
+							<button type="submit" class="btn">Entrar</button>
+							<a href="">Esqueci a senha</a>
+						</form>
+						<form id="RegForm">
+							<input type="text" placeholder="Nome">
+							<input type="email" placeholder="Email">
+							<input type="password" placeholder="Senha">
+							<button type="submit" class="btn">Cadastre-se</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    				<!----------rodape-------->
+		<div class="rodape">
+			<div class="container">
+					<div class="row">
+						<div class="rodape-col-1">
+							<h3>Baixe o nosso aplicativo</h3>
+							<p>Faça o download do nosso aplicativo para Android e iOS e tenha tudo na palma da sua mão.</p>
+						<div class="app-logo">
+							<img src="imagens/Imagem_do_WhatsApp_de_2024-10-22_à_s__16.47.51_a25d27c5-removebg-preview.png"> <!--logo google play-->																	
+						</div>
+						</div>
+						<div class="rodape-col-2">
+							<img src="imagens/logo lacademia inverso.jpg"> <!--logo do rodape-->
+							<p>Nosso objetivo é tornar os benefícios e experiências mais acessíveis para todos!</p>
+						</div>
+						<div class="rodape-col-3">
+							<h3>Links</h3>
+							<ul>
+								<li>Cupons</li>
+								<li>Postagens no blog</li>
+								<li>Politicas de devolução</li>
+								<li>Una-se aos afiliados</li>
+								</ul>
+						</div>
+						<div class="rodape-col-4">
+							<h3>Redes Sociais</h3>
+								<ul>
+									<li>Facebook</li>
+									<li>Twitter</li>
+									<li>Instagram</li>
+									<li>YouTube</li>
+								</ul>
+						</div>
+					</div>
+						<hr>
+						<P class="site">Primeiro site 2024-Laysla Silva</P>
+			</div>
+		</div>
+		<!---js para alternar menu-->
+	<script>
+		var MenuItens = document.getElementById("MenuItens");
+
+		MenuItens.style.maxHeight = "0px";
+
+		function menutoggle(){
+			if(MenuItens.style.maxHeight == "0px")
+			{
+				 MenuItens.style.maxHeight ="200px"
+			}
+			else
+			{
+				 MenuItens.style.maxHeight ="0px"
+			}
+		}
+    
+	</script>
+
+	<!----------para alternar  o form---------->
+
+	<script>
+		var LoginForm = document.getElementById("LoginForm");
+		var RegForm = document.getElementById("RegForm");
+		var Indicator = document.getElementById("Indicator");
+
+			function register() {
+			RegForm.style.transform = "translateX(0px)";
+			LoginForm.style.transform = "translateX(0px)";
+			Indicator.style.transform = "translateX(100px)";
+		
+			}
+
+			function login() {
+			RegForm.style.transform = "translateX(300px)";
+			LoginForm.style.transform = "translateX(300px)";
+			Indicator.style.transform = "translateX(0px)";
+			
+			}
+
+
+	</script>
+
+	
+</body>
+</html>
